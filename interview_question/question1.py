@@ -34,7 +34,11 @@ def group_anagrams(input):
     # {'aet': ['eat', 'tea', 'ate'], 'ant': ['tan', 'nat'], 'abt': ['bat']}
     return list(my_dict.values())
 
-    # second solution
+
+xx = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(group_anagrams(xx))  # [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+
+# second solution
 words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
 
@@ -44,7 +48,3 @@ for i in words:
     if my_list not in anagram:
         anagram.append(my_list)
 print(anagram)
-
-
-xx = ["eat", "tea", "tan", "ate", "nat", "bat"]
-print(group_anagrams(xx))  # [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
