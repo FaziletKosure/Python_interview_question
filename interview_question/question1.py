@@ -48,3 +48,16 @@ for i in words:
     if my_list not in anagram:
         anagram.append(my_list)
 print(anagram)
+
+
+# third solution
+
+a = ["eat", "tea", "tan", "ate", "nat", "bat"]
+b = {}
+for i in a:
+    x = "".join(sorted(i))
+    if x not in b:
+        b[x] = []
+    b[x].append(i)
+print(list(b.values()))
+
