@@ -17,3 +17,11 @@ closing_in_sum(251220)  # 72
 # 5 and 2 form 52.
 
 # 20 + 52 = 72
+
+
+
+def closing_in_sum1(n):
+    n = str(n)
+    if len(n) <= 2:
+        return int(n)
+    return int(n[0] + n[-1]) + closing_in_sum1(n[1:-1])
