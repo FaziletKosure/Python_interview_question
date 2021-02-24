@@ -9,3 +9,8 @@ snakefill(6)  # 5
 
 snakefill(24)  # 9
 
+
+
+def snakefill2(n):
+    return floor(log2(n*n))
+
